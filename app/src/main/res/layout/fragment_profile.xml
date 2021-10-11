@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:gravity="center_vertical"
+        android:text="@string/edit_profile"
+        android:padding="16dp"
+        android:drawablePadding="16dp"
+        app:drawableStartCompat="@drawable/ic_pen"
+        app:drawableEndCompat="@drawable/ic_rightarrow" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile"
+        android:background="@color/divider_color"/>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:gravity="center_vertical"
+        android:text="@string/logout"
+        android:padding="16dp"
+        android:drawablePadding="16dp"
+        app:drawableStartCompat="@drawable/ic_pen"
+        app:drawableEndCompat="@drawable/ic_rightarrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logout"
+        android:background="@color/divider_color"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

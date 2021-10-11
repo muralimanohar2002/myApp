@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileNameActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/enter_your_name"
+        android:textStyle="bold"
+        android:textColor="@color/text_grey"
+        android:fontFamily="@font/comfortaa_regular"
+        android:textSize="36sp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/number_text_box"
+        app:layout_constraintTop_toBottomOf="@id/enter_name"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:hint="@string/enter_name"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="19dp"
+        android:paddingEnd="19dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/name_txt"
+        app:layout_constraintEnd_toEndOf="@id/name_txt"
+        app:layout_constraintTop_toBottomOf="@id/name_txt"
+        android:layout_marginTop="26dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/otp_bg"
+        android:text="@string/next"/>
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/loading_bg"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
