@@ -36,8 +36,8 @@ class ProfileNameActivity : AppCompatActivity() {
                 val user = Users(uid, name, phoneNum)
 
                 database.reference.child("Users").child(uid).setValue(user).addOnSuccessListener {
-                    val intent = Intent(this, DashBoardActivity::class.java)
                     binding.progressBar.loaderLayout.visibility = View.GONE
+                    val intent = Intent(this, DashBoardActivity::class.java)
                     intent.putExtra("mCode", 1)
                     startActivity(intent)
                     finishAffinity()
