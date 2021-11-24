@@ -9,6 +9,8 @@
         android:layout_height="@dimen/_65sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
         app:srcCompat="@drawable/ic_google_icon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
